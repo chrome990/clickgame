@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Click Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/edc63f5585.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi:wght@700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="headd">
+            <h1 class="title"><span class="game">Click </span>Game</h1>        
+        </div>
+        <div class="head-part">
+            <button class="tbtn" id="time1">10s</button>
+            <button class="tbtn" id="time2">20s</button>
+            <button class="tbtn" id="time3">50s</button>
+            <button class="tbtn" id="time4">Custom</button>
+        </div>
+        <div class="click-part">
+            <p id="countdown" class="countdown">Time: 0</p> 
+            <h3 id="clickcount" class="clickcount">0</h3>
+            <!--<button id="click" class="click">Click As Fast You Can</button>-->
+            <button id="click" class="btn btn--light">               
+                <span class="btn__inner">
+                <span class="btn__slide"></span>
+                <span class="btn__content" style="font-family: 'Sriracha', cursive;">Click Here As Fast You Can</span>
+                </span>
+            </button>                
+            <button id="stop" class="stop">Stop Timer & reset</button>
+            <p class="present">This Simple Game Created By <span class="chrome">TARGET</span></p>
+            <div class="media-box">
+                <a id="disc" class="icon"><i id="disc" class="fa-brands fa-discord"></i></a>
+                <a id="yt" href="https://www.youtube.com/channel/UCzWNN_s4D8QmTzh8_a7oNhA" class="icon"><i id="yt" class="fa-brands fa-youtube"></i></a>
+                <a id="mail" class="icon"><i id="mail" class="fa-solid fa-envelope"></i></a>
+                <a id="gith" href="https://github.com/chrome990" class="icon"><i id="gith" class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </main>
+    <div id="lastbox" class="lastbox">
+        <p class="congrats" id="congrats">Congrats You got: 0 click 🥳</p>
+        <button class="hidebtn" id="hideboxbtn">Close</button>
+    </div>
+    <div id="customtimer" class="customtimer">
+        <label class="cla">Make A Custom Time ⏳:</label>
+        <input type="number" id="customtimeinput" class="ct" placeholder="Put The Custom Time">
+        <div class="custombtn">
+            <button class="settime" id="customtimebtn">Submit</button>     
+            <button class="closetime" id="closecustomtime">Close</button>   
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
